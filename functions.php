@@ -155,8 +155,8 @@ function multiplicationTable($x, $y)
         echo "<table border='1'>";
 
         echo "<tr>";
-        for ($i = 1; $i < $x; $i++) {
-            for ($j = 1; $j < $y; $j++) {
+        for ($i = 1; $i <=$x; $i++) {
+            for ($j = 1; $j <=$y; $j++) {
                 $proizv = $i * $j . " ";
                 echo "<td>" . $proizv . "</td>";
             }
@@ -169,7 +169,8 @@ function multiplicationTable($x, $y)
 
     }
 }
-
+echo "<br>";
+echo multiplicationTable(1,1);
 echo "<br>";
 echo multiplicationTable(2, 2);
 echo "<br>";
