@@ -29,24 +29,24 @@ echo "<br>";
 echo "<br>";
 
 $integ = array(10, 5, 1);
-$minus = "+";
+$operator = "+";
 
-function task2($minus, $arr)
+function task2($arr, $operator)
 {
     $rez1 = "Результат = ";
     $rez2 = 0;
 
 
     for ($i = 0; $i < count($arr); $i++) {
-        if ($minus == "-") {
+        if ($operator == "-") {
             $rez2 -= $arr[$i];
 
-            $rez3 = $arr[$i] . $minus;
+            $rez3 = $arr[$i] . $operator;
             $rez4 .= $rez3;
-        } elseif ($minus == "+") {
+        } elseif ($operator == "+") {
             $rez2 += $arr[$i];
 
-            $rez3 = $arr[$i] . $minus;
+            $rez3 = $arr[$i] . $operator;
             $rez4 .= $rez3;
 
         }
@@ -57,7 +57,7 @@ function task2($minus, $arr)
     echo $rez;
 }
 
-task2($minus, $integ);
+task2($operator, $integ);
 echo "<br>";
 echo "<br>";
 echo "<br>";
