@@ -205,7 +205,6 @@ function task5($text)
         if ($FirstSymbol == $LastSymbol) {
             return TRUE;
         } else {
-             break;
              return FALSE; 
         }
     }
