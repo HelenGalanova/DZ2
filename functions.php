@@ -142,7 +142,7 @@ echo "<br>";
 <?php
 function task4($a)
 {
-    if (!intval($a) or $a < 1 or !preg_match('/^\+?\d+$/', $a)) {
+    if ($a < 1) {
         return 'NOT ok';
     } else {
         return 'ok';
