@@ -171,8 +171,6 @@ function multiplicationTable($x, $y)
 }
 
 echo "<br>";
-echo multiplicationTable(1, 1);
-echo "<br>";
 echo multiplicationTable(2, 2);
 echo "<br>";
 echo multiplicationTable(3, 3);
