@@ -170,7 +170,7 @@ function multiplicationTable($x, $y)
     }
 }
 echo "<br>";
-echo multiplicationTable(1,1);
+echo multiplicationTable(1, 1);
 echo "<br>";
 echo multiplicationTable(2, 2);
 echo "<br>";
@@ -182,12 +182,13 @@ echo multiplicationTable(5, 6);
 echo "<br>";
 echo multiplicationTable(6, 6);
 echo "<br>";
-echo multiplicationTable(6.7, 6);
+echo multiplicationTable(7, 7);
+echo "<br>";
+echo multiplicationTable(8, 8);
 echo "<br>";
 echo multiplicationTable(89, -31);
 echo "<br>";
 echo "<br>";
-
 ?>
 
 
