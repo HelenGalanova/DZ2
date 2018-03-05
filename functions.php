@@ -31,7 +31,7 @@ echo "<br>";
 $integ = array(10, 5, 1);
 $operator = "+";
 
-function task2($arr, $operator)
+function task2($operator, $arr)
 {
     $rez1 = "Результат = ";
     $rez2 = 0;
@@ -202,10 +202,8 @@ function task5($text)
         $FirstSymbol = mb_substr($SmallText, $i, 1);;
         $LastSymbol = mb_substr($SmallText, $length - 1 - $i, 1);;
         if ($FirstSymbol == $LastSymbol) {
-            return TRUE;
-        } else {
-             return FALSE; 
-        }
+           return ($a < 1);
+        } 
     }
 
 }
