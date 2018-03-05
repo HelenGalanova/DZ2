@@ -24,45 +24,39 @@ echo "<br>";
 ?>
 
 
-<?php
-
-echo "<br>";
-
-$integ = array(10, 5, 1);
-$operator = "+";
-
-function task2($arr, $operator)
-{
-    $rez1 = "Результат = ";
-    $rez2 = 0;
-
-
-    for ($i = 0; $i < count($arr); $i++) {
-        if ($operator == "-") {
-            $rez2 -= $arr[$i];
-
-            $rez3 = $arr[$i] . $operator;
-            $rez4 .= $rez3;
-        } elseif ($operator == "+") {
-            $rez2 += $arr[$i];
-
-            $rez3 = $arr[$i] . $operator;
-            $rez4 .= $rez3;
-
+<?
+function task2($arr, $calc) {
+    echo implode($calc, $arr).' = ';
+    $count = 0;
+    foreach($arr as $k => $item) {
+        if($k > 0)
+        {
+            switch($calc) {
+                case '-':
+                    $count -= $item;
+                    break;
+                case '+':
+                    $count += $item;
+                    break;
+                case '*':
+                    $count *= $item;
+                    break;
+                case '/':
+                    $count /= $item;
+                    break;
+            }
+        } else {
+            $count = $item;
         }
     }
-
-
-    $rez = $rez1 . $rez4 . "=" . $rez2;
-    echo $rez;
+    echo $count;
+    echo '<br>';
 }
-
-task2($operator, $integ);
-echo "<br>";
-echo "<br>";
-echo "<br>";
+task2(array(1,2,3,4), '+');
+task2(array(1,2,3,4), '-');
+task2(array(1,2,3,4), '*');
+task2(array(1,2,3,4), '/');
 ?>
-
 
 <?php
 function task3()
