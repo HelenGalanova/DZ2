@@ -31,7 +31,7 @@ echo "<br>";
 $integ = array(10, 5, 1);
 $operator = "+";
 
-function task2($operator, $arr)
+function task2($arr, $operator)
 {
     $rez1 = "Результат = ";
     $rez2 = 0;
