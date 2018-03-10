@@ -45,11 +45,16 @@ function task2($arr, $calc)
 
 ?>
 
+
 <?php
-echo "<h2>Задание 3</h2>";
-echo task3("+", 1, 2, 3, 4);
-echo "<br>";
-echo "<br>";
+function task3($str)
+{
+    $arr = func_get_args();
+    unset($arr[0]);
+    return task2($arr, $str);
+
+}
+
 ?>
 
 <?php
