@@ -46,17 +46,11 @@ function task2($arr, $calc)
 ?>
 
 <?php
-function task3($str)
-{
-    if (in_array($str, array('-', '+', '/', '*'))) {
-        $arr = func_get_args();
-        $a = $arr[0];
-        task2($str, $arr);
-    }
-}
-
+echo "<h2>Задание 3</h2>";
+echo task3("+", 1, 2, 3, 4);
+echo "<br>";
+echo "<br>";
 ?>
-
 
 <?php
 function task4($x, $y)
